@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>Quantos Por cento ? - Sua Calculadora de Porcentagem</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLD4V8HCCN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PLD4V8HCCN');
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9220407606866811"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header></header>
+
+    <body>
+        <div id="main" class="main-container">
+            <div class="main-percent-title">%</div>
+            <div id="main-title" class="main-title">Quantos<br>Por cento ?</div>
+            <div id="main-desc" class="main-desc">Calculadora de Porcentagem</div>
+            <div id="select-input" class="select-input">
+                <select name="percent" id="percentChoice">
+                    <option value="option1" alt="Opção de quantos porcento de algum valor">Quantos Por cento de algum
+                        valor</option>
+                    <option value="option2" alt="Opção de algum valor é quantos porcendo de outro valor">Algum Valor é
+                        Quantos Por cento de outro</option>
+                </select>
+            </div>
+            <div id="calc-container" class="calc-container">
+                <div id="formula" class="formula">
+                    <div class="controler-calc">
+                        <input type="number" name="value1" id="percentInput" class="base-calc-input">
+                        <div id="icon1" class="text-icon">%</div>
+                    </div>
+                    <div class="base-calc-divider">de</div>
+                    <div class="controler-calc">
+                        <input type="number" name="value2" id="numberCalc" class="base-calc-input">
+                        <div id="icon2" class="text-icon">%</div>
+                    </div>
+                </div>
+                <div id="result" class="result">
+                    <input type="text" id="resultInput" class="base-calc-input">
+                    <div id="icon3" class="text-icon-result">%</div>
+                    <div class="copy-button" id="copyButton"><img src="img/copy-button.svg" alt="Botão Copiar"> Copiar
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div id="contentContainer" class="content-container">
+                <h1>O que é Porcentagem ?</h1>
+                <br>
+                <p>O calculo de <span>porcentagem</span> ou <span>percentagem</span>, que é representada pelo símbolo
+                    <span>%</span>
+                    é a divisão de algum número por 100, isso significa que é feita uma <span>divisão</span>
+                    onde o <span>denominador</span> sempre é 100, por exemplo, se
+                    usarmos o número <span>25</span> de dividirmos ele por <span>100</span> termos o resultado de
+                    <span>0.25</span>.
+                </p>
+                <br>
+                <h3>
+                    O como aplicamos esse resultado numa conta?
+                </h3>
+                <br>
+                <p>
+                    Agora que temos o resultado da nossa divisão, podemos saber qual é a porcentagem de um número
+                    qualquer, lembrando que
+                    o nosso resultado <span>0.25</span> é a representação de <span>25%</span> e será ele que iremos usar
+                    no nosso exemplo.
+                </p>
+                <br>
+                <p>Para conseguirmos saber a porcentagem de um número qualquer como por exemplo:
+                    <br>
+                    <br>
+                    <span>56</span>
+                    <br>
+                    <br>
+                    podemos simplesmente multiplicar o nosso resultado (<span>0.25</span>)
+                    pelo número escolhido assim:
+                    <br>
+                    <br>
+                    <span>56 x 0.25 = 14</span>
+                    <br>
+                    <br>
+                    E como resultado será mostrado <span>14</span>.
+                    <br>
+                    <br>
+                    Com isto sabemos que <span>14</span> é <span>25%</span> de <span>56</span>.
+                </p>
+                <br>
+                <p>Sendo o <span>14</span> a 4º
+                    parte de um todo, pois se dividirmos 100 por 4 o resultado será 25, indicando que 25 é um número
+                    inteiro que divide 100.
+                    <br>
+                    <br>
+                    Vemos que a porcentagem está diretamente ligada ao 100%
+                    de qualquer valor e ela
+                    representa o todo ou uma parte desses 100%.
+                </p>
+            </div>
+            <footer>
+                <div class="footter">
+                    <div class="footer-percent-title">%</div>
+                    <div class="footer-percent-nome">Quantos<br>Por cento</div>
+                </div>
+                <div class="created-date">Criado em 15/04/2022</div>
+                <div class="created-by">Criado por: <a href="https://www.instagram.com/dihsilva300"
+                        alt="Instagram do Criador" target="_blank">Diogo Silva</a></div>
+            </footer>
+        </div>
+        <div id="copyMessage" class="copy-message">Valor Copiado!</div>
+    </body>
+    <!-- SCRIPTS -->
+
+    <script src="js/calculator.js"></script>
+</body>
+
+</html>

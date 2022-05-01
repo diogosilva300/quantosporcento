@@ -1,0 +1,306 @@
+/*--------- RESET ----------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------- DEFINIÇÕES ----------*/
+
+:root{
+    --background-color: #6AD1E8;
+    --white: #fff;
+    --background-boxes: #E5F6F8;
+}
+
+p{
+    color: #181818;
+}
+
+/*--------- BODY ----------*/
+
+body{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: var(--background-color);
+}
+
+/*--------- COISAS ----------*/
+
+.main-container{
+    width: 60rem;
+    height: 100%;
+    background-color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-percent-title{
+    font-size: 7rem;
+    font-weight: 700;
+    color: var(--background-color);
+    margin-top: 6rem;
+    text-shadow: 2px 2px 1px #bdd7d7;
+}
+
+.main-title{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: -3rem;
+    text-shadow: 2px 2px 1px #bdd7d7;
+    text-align: center;
+}
+
+.select-input{
+    margin-top: 2rem;
+}
+
+#percentChoice{
+    outline: none;
+    width: 45rem;
+    height: 4rem;
+    border: 3px solid var(--background-color);
+    border-radius: 8px;
+
+    font-size: 2rem;
+    font-family: Poppins, sans-serif;
+    background-color: var(--background-boxes);
+}
+
+.calc-container{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.formula{
+    display: flex;
+    align-items: center;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.75rem;
+}
+
+.base-calc-input{
+    outline: none;
+    width: 19rem;
+    height: 4rem;
+    border: 2px solid var(--background-color);
+    border-radius: 8px;
+    background-color: var(--background-boxes);
+    font-family: Poppins, sans-serif;
+    font-size: 3rem;
+    text-align: right;
+    padding-right: 2.5rem;
+}
+
+.base-calc-divider{
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.text-icon{
+    position: relative;
+    top: -4.3rem;
+    left: 16.4rem;
+    font-family: poppins, sans-serif;
+    font-size: 3.1rem;
+}
+
+.text-icon-result{
+    position: relative;
+    top: -0.4rem;
+    left: -2.6rem;
+    font-family: poppins, sans-serif;
+    font-size: 3.1rem;
+}
+
+.controler-calc{
+    position: relative;
+    height: 3.5rem;
+}
+
+.copy-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.4rem 0.2rem;
+    border: 2px solid var(--background-color);
+    border-radius: 8px;
+    margin-left: 0.2rem;
+    background-color: var(--background-boxes);
+    cursor: pointer;
+}
+
+.copy-message{
+    position: absolute;
+    top: -5rem;
+    height: 3.2rem;
+    width: 31rem;
+    background-color: #88ff88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #057c03;
+
+    font-family: poppins, sans-serif;
+    font-size: 1rem;
+
+    border: 1px solid #057c03;
+    border-radius: 8px;
+
+    transition: .5s;
+}
+
+.divider{
+    height: 1px;
+    width: 100%;
+    background-color: var(--background-color);
+    margin: 4rem 0;
+}
+
+.content-container{
+    width: 100%;
+    padding: 0 6rem;
+    margin-bottom: 4rem;
+}
+
+.content-container span{
+    color: var(--background-color);
+    font-weight: 700;
+}
+
+footer{
+    background-color: var(--background-boxes);
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6rem;
+}
+
+.footter{
+    display: flex;
+    align-items: center;
+}
+
+.footer-percent-title{
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--background-color);
+    text-shadow: 2px 2px 1px #bdd7d7;
+}
+
+.footer-percent-nome{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--background-color);
+    text-shadow: 2px 2px 1px #bdd7d7;
+}
+
+.created-by{
+    color: black;
+    font-size: 0.8rem;
+}
+
+.created-by a{
+    text-decoration: none;
+    color: var(--background-color);
+}
+
+.created-date{
+    color: black;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 425px){
+    .main-container{
+        width: 24rem;
+    }
+
+    .main-percent-title{
+        margin-top: 2rem;
+    }
+
+    .main-title{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #percentChoice{
+        width: 21rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+
+    .calc-container{
+        margin-top: 2rem;
+    }
+
+    .base-calc-input{
+        width: 9rem;
+        height: 3rem;
+        font-size: 2rem;
+        padding-right: 1.9rem;
+    }
+
+    .text-icon{
+        top: -3rem;
+        left: 7.2rem;
+        font-size: 2rem;
+    }
+
+    .text-icon-result{
+        top: 0rem;
+        left: -1.9rem;
+        font-size: 2rem;
+    }
+
+    .result{
+        margin-top: 0.75rem;
+    }
+
+    .copy-button{
+        padding: 0.1rem 0.2rem;
+        font-size: 0.8rem;
+    }
+
+    .content-container{
+        padding: 0 1rem;
+    }
+
+    footer{
+        padding: 0 1rem;
+        height: 7rem;
+    }
+
+    .footer-percent-title {
+        font-size: 2rem;
+    }
+
+    .footer-percent-nome {
+        font-size: 0.6rem;
+    }
+
+    .created-by{
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .created-date{
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .copy-message{
+        width: 23rem;
+    }
+}
